@@ -1,0 +1,10 @@
+[Unit]
+Description = Ethernet DHCP Client detector
+
+[Service]
+ExecStart = /opt/eth-detector/bin/eth-detector -o /tmp/OLED
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
